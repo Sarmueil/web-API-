@@ -6,8 +6,8 @@ import { readSync } from 'fs';
 import { Database } from '../Database';
 
 let organization:any;
-if(fs.existsSync("/Users/decagon/Desktop/WEEK-6-TASK/week-6-node-008-Sarmueil/lib/users.json")){
- organization = fs.readFileSync("/Users/decagon/Desktop/WEEK-6-TASK/week-6-node-008-Sarmueil/lib/users.json")
+if(fs.existsSync("../../lib/users.json")){
+ organization = fs.readFileSync("../../lib/users.json")
  organization =  JSON.parse(organization)
 }else {
   organization = []
@@ -70,7 +70,7 @@ router.post('/', function(req:Request, res:Response, next:NextFunction){
     data: obj
   })
    //console.log(final)
-    fs.writeFile('/Users/decagon/Desktop/WEEK-6-TASK/week-6-node-008-Sarmueil/lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
+    fs.writeFile('../../lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
       if(err){
         throw(err)
       }
@@ -109,7 +109,7 @@ router.put('/:id', function(req:Request, res:Response, next:NextFunction){
     }else {
       res.send("not found")
     }
-    fs.writeFile('/Users/decagon/Desktop/WEEK-6-TASK/week-6-node-008-Sarmueil/lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
+    fs.writeFile('../../lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
       if(err){
         throw(err)
       }
@@ -132,7 +132,7 @@ router.delete('/:id', function(req:Request, res:Response){
     message: 'Data deleted successfully',
     data: final
   })
-    fs.writeFile('/Users/decagon/Desktop/WEEK-6-TASK/week-6-node-008-Sarmueil/lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
+    fs.writeFile('../../lib/users.json', JSON.stringify(organization, null, " "), (err:any)=>{
       if(err){
         throw(err)
       }

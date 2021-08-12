@@ -1,1 +1,40 @@
-[]
+[
+ {
+  "organization": "9ja",
+  "createdAt": "2021-08-12T15:42:49.061Z",
+  "updatedAt": "2021-08-12T15:42:49.061Z",
+  "products": [
+   "developers",
+   "pizza"
+  ],
+  "marketValue": "90%",
+  "address": "japan",
+  "ceo": "cn",
+  "country": "Taiwan",
+  "id": 1,
+  "noOfEmployees": 2,
+  "employees": [
+   "james bond",
+   "jackie chan"
+  ]
+ },
+ {
+  "organization": "caihjklro",
+  "createdAt": "2021-08-12T15:54:09.155Z",
+  "updatedAt": "2021-08-12T15:54:44.560Z",
+  "products": [
+   "developers",
+   "pizza"
+  ],
+  "marketValue": "90%",
+  "address": "india",
+  "ceo": "cn",
+  "country": "Taiwan",
+  "id": 2,
+  "noOfEmployees": 2,
+  "employees": [
+   "james bond",
+   "jackie chan"
+  ]
+ }
+]
