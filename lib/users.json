@@ -36,5 +36,24 @@
    "james bond",
    "jackie chan"
   ]
+ },
+ {
+  "organization": "9ja",
+  "createdAt": "2021-08-12T16:28:17.207Z",
+  "updatedAt": "2021-08-12T16:28:17.207Z",
+  "products": [
+   "developers",
+   "pizza"
+  ],
+  "marketValue": "90%",
+  "address": "japan",
+  "ceo": "cn",
+  "country": "Taiwan",
+  "id": 3,
+  "noOfEmployees": 2,
+  "employees": [
+   "james bond",
+   "jackie chan"
+  ]
  }
 ]

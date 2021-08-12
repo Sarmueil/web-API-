@@ -4,13 +4,19 @@ const fs = require("fs")
 import {Request, Response, NextFunction} from 'express'
 import { Database } from '../Database';
 
-let organization:any;
-if(fs.existsSync("../../lib/users.json")){
- organization = fs.readFileSync("../../lib/users.json")
- organization =  JSON.parse(organization)
-}else {
-  organization = []
-}
+ let organization:any;
+ try{
+  organization = require("../../lib/users.json")
+ }catch(err){
+  organization=[];
+ }
+// let organization:any;
+// if(fs.existsSync("../../lib/users.json")){
+//  organization = fs.readFileSync("../../lib/users.json")
+//  organization =  JSON.parse(organization)
+// }else {
+//   organization = []
+// }
 
 /* GET users listing. */
 router.get('/', function (req:Request, res:Response, next:NextFunction) {
