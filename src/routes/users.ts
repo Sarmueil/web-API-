@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 const fs = require("fs")
 import {Request, Response, NextFunction} from 'express'
-import { readSync } from 'fs';
 import { Database } from '../Database';
 
 let organization:any;
